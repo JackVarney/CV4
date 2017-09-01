@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PanelComponent } from './Panels/panel.component';
+
+import { PanelModule } from './panels/panel.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +15,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
