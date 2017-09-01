@@ -1,13 +1,15 @@
-<div id="pnl" class="col-sm-8 col-sm-offset-2 panel" *ngFor="let panel of panels; let i=index;">
-  <div id="pnlHeader" class="panel-heading" >
+<div id="pnl" class="col-sm-8 col-sm-offset-2 panel" *ngFor="let panel of panels; let i=index;" (mouseover)="onHover(i)">
+  <div id="pnlHeader" class="panel-heading">
     <div id="pnlBody" class="panel-body">
       <md-input-container id="inputContainer">
-        <textarea id="textArea" mdInput placeholder="{{panel.name}}" type="text" class="form-control" [(ngModel)]="panel.inputText"></textarea>
+        <textarea autosize id="textArea" mdInput placeholder="{{panel.name}}" type="text" class="form-control" rows="6" [(ngModel)]="panel.inputText"></textarea>
       </md-input-container>
+      <div>
+        <app-panel-well [wellInfo]="panels" [index]="i" ></app-panel-well>
+      </div>
     </div>
   </div>
 </div>
-
 
 <!-- PANELS FROM CV2  -->
 <!-- <div id="pnlInfo" class="col-sm-8 col-sm-offset-2 panel panel-defualt">
@@ -20,12 +22,3 @@
     </div>
   </div>
 </div>  -->
-
-<!-- OLD PANELS  -->
-<!-- <div class="col-sm-8 col-offset-2 panel panel-primary" *ngFor="let panel of panels">
-    <div class="panel-header"> {{panel.name}}
-        <div class="panel-body"> {{panel.description}}
-            <md-input-container></md-input-container>
-        </div>
-    </div>
-</div> -->

@@ -1,30 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { MdInputModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Autosize } from 'angular2-autosize/src/autosize.directive';
 
 import { PanelComponent } from './panel.component';
 import { PanelService } from './panel.service';
 
-import { MdRadioModule, MdInputModule, MdTooltipModule, MdCheckboxModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PanelWellModule } from './Panel-Wells/panel-well.module'
 
-@NgModule({    
-  declarations: [PanelComponent],
+@NgModule({
+  declarations:
+  [ PanelComponent,
+    Autosize
+  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     MdInputModule,
-    MdRadioModule,
-    MdTooltipModule,
-    MdCheckboxModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PanelWellModule
   ],
-exports: [
+  exports: [
     PanelComponent
-],
-  providers: [ PanelService ]
+  ],
+  providers: [PanelService]
 })
 
 export class PanelModule { }
