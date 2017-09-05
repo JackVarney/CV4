@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './routing/route.module';
 
 import { HomeModule } from './components/home/home.module';
 import { NavModule } from './components/nav/nav.module';
@@ -18,7 +19,8 @@ import { NavModule } from './components/nav/nav.module';
     HttpModule,
     // My Own Modules
     HomeModule,
-    NavModule
+    NavModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

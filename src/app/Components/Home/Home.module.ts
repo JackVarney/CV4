@@ -10,7 +10,7 @@ import { PanelModule } from 'app/components/panels/panel.module';
     imports: [
         BrowserModule,
         FormsModule,
-        PanelModule
+        PanelModule,
     ],
     exports: [
         HomeComponent
@@ -18,3 +18,5 @@ import { PanelModule } from 'app/components/panels/panel.module';
 })
 
 export class HomeModule { }
+
+export const homeComponent = HomeComponent;

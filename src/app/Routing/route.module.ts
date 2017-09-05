@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeModule } from '../components/home/home.module';
+import { homeComponent } from '../components/home/home.module';
 
 const appRoutes: Routes = [
-    {path: 'Home', component: HomeModule}
-]
+    { path: 'home', component: homeComponent }
+];
 
 @NgModule({
     imports: [
         RouterModule.forRoot(
             appRoutes,
-            { enableTracing: true}
+            { enableTracing: true }
         )
+    ],
+    exports: [
+        RouterModule
     ]
 })
 
-export class RouteModule { }
+export class AppRoutingModule { }

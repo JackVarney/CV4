@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouteModule } from 'app/Routing/route.module';
 
 import { NavBarComponent } from './nav.component';
+
+// Routing
+import { AppRoutingModule } from 'app/routing/route.module';
 
 @NgModule({
     declarations: [
@@ -12,7 +14,8 @@ import { NavBarComponent } from './nav.component';
     imports: [
         BrowserModule,
         FormsModule,
-        RouteModule
+        // My own module
+        AppRoutingModule,
     ],
     exports: [
         NavBarComponent
