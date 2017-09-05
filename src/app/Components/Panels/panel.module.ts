@@ -8,7 +8,8 @@ import { Autosize } from 'angular2-autosize/src/autosize.directive';
 import { PanelComponent } from './panel.component';
 import { PanelService } from './panel.service';
 
-import { PanelWellModule } from './Panel-Wells/panel-well.module'
+import { PanelWellModule } from '../Panel-Wells/panel-well.module';
+import { ProgressBarModule } from '../Progress-Bars/progress-bar.module';
 
 @NgModule({
   declarations:
@@ -20,7 +21,9 @@ import { PanelWellModule } from './Panel-Wells/panel-well.module'
     FormsModule,
     MdInputModule,
     BrowserAnimationsModule,
-    PanelWellModule
+    // my own modules
+    PanelWellModule,
+    ProgressBarModule
   ],
   exports: [
     PanelComponent

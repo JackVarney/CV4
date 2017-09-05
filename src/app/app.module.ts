@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { PanelModule } from './panels/panel.module';
+import { HomeModule } from './components/home/home.module';
+import { NavModule } from './components/nav/nav.module';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,12 @@ import { PanelModule } from './panels/panel.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    PanelModule
+    // My Own Modules
+    HomeModule,
+    NavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
