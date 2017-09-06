@@ -5,4 +5,5 @@ export class Panel {
     wellOn: string;
     progress: number;
     isText: boolean;
+    hasTable: boolean;
 };

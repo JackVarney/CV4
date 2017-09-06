@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing/route.module';
 
 import { HomeModule } from './components/home/home.module';
+import { InfoModule } from './components/info/info.module';
 import { NavModule } from './components/nav/nav.module';
+import { CVModule } from './components/cv/cv.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NavModule } from './components/nav/nav.module';
     HttpModule,
     // My Own Modules
     HomeModule,
+    InfoModule,
     NavModule,
+    CVModule,
     AppRoutingModule
   ],
   providers: [],

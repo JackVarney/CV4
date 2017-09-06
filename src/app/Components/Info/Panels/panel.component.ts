@@ -28,16 +28,11 @@ export class PanelComponent implements OnInit {
         this.panelService.getPanels().then(x => this.panels = x);
     }
 
-
-
     onHover(i: number) {
         if (!this.showWell) {
             this.panels[i].wellOn = (this.panels[i].wellOn === 'open') ? 'close' : 'open';
         }
     }
-
-
-
 
     maintainWell(i: number) {
         if (this.panels[i].inputText.length > 0) {
@@ -47,12 +42,5 @@ export class PanelComponent implements OnInit {
             this.panels[i].wellOn = 'close';
             this.showWell = false;
         }
-    }
-
-
-
-    progress(i) {
-        this.panels[i].progress = this.panels[i].inputText.length;
-        console.log(this.panels[i].progress);
     }
 };

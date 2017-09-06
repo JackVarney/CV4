@@ -10,6 +10,7 @@ import { PanelService } from './panel.service';
 
 import { PanelWellModule } from '../Panel-Wells/panel-well.module';
 import { ProgressBarModule } from '../Progress-Bars/progress-bar.module';
+import { EdInputModule } from '../edinput/edinput.module';
 
 @NgModule({
   declarations:
@@ -23,7 +24,8 @@ import { ProgressBarModule } from '../Progress-Bars/progress-bar.module';
     BrowserAnimationsModule,
     // my own modules
     PanelWellModule,
-    ProgressBarModule
+    ProgressBarModule,
+    EdInputModule
   ],
   exports: [
     PanelComponent

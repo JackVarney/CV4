@@ -2,19 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { HomeComponent } from './home.component';
+import { CVComponent } from './cv.component';
 
 @NgModule({
-    declarations: [ HomeComponent ],
+    declarations: [ CVComponent ],
     imports: [
         BrowserModule,
         FormsModule
     ],
     exports: [
-        HomeComponent
+        CVComponent
     ]
 })
 
-export class HomeModule { }
+export class CVModule { }
 
-export const homeComponent = HomeComponent;
+export const cvComponent = CVComponent;

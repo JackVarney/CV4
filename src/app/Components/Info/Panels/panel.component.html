@@ -3,11 +3,11 @@
   <div id="pnlBody" class="panel-body">
     <md-input-container id="inputContainer">
       <textarea autosize id="textArea" mdInput placeholder="{{panel.name}}" type="text" class="form-control" rows="6" [(ngModel)]="panel.inputText"
-        (keyup)="maintainWell(i) + progress(i)"></textarea>
+        (keyup)="maintainWell(i)"></textarea>
     </md-input-container>
     <div [@easeInOut]="panel.wellOn">
       <app-panel-well [wellInfo]="panels" [index]="i"></app-panel-well>
     </div>
-    <app-progress-bar [index]="i" [progress]="panels"></app-progress-bar>
+    <app-progress-bar [index]="i" [panel]="panels"></app-progress-bar>
   </div>
 </div>
