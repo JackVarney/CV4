@@ -1,1 +1,7 @@
- <app-navbar></app-navbar>
+<div id="middle" class="col-md-offset-1" [style.height.px]="getScreenHeight()">
+    <div id="div-app-navbar">
+        <app-navbar (idNumber)="getID($event)"></app-navbar>
+    </div>
+</div>
+
+<app-footer></app-footer>

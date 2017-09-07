@@ -1,0 +1,12 @@
+#footer{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    z-index: 8000;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+}

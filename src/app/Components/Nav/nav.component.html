@@ -1,18 +1,27 @@
-<nav class="navbar">
-    <div id="navButton" class="col-sm-offset-5 navbar-header">
-        <button type="button" class="navbar-toggle collapsed">        
-      </button>
+ <!-- <nav class="navbar">
+    <div id="1" class="col-sm-offset-4 navbar-header" (click)="onclick('1')">
+        <button type="button" class="navbar-toggle collapsed" ></button>
         <a routerLink="/home" routerLinkActive="active" class="navbar-brand">Home</a>
     </div>
-    <div id="navButton" class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed">        
-      </button>
+    <div id="2" class="navbar-header" (click)="onclick('2')">
+        <button type="button" class="navbar-toggle collapsed" ></button>
         <a routerLink="/info" routerLinkActive="active" class="navbar-brand">Information</a>
     </div>
-    <div id="navButton" class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed">        
-      </button>
+    <div id="3" class="navbar-header" (click)="onclick('3')">
+        <button type="button" class="navbar-toggle collapsed" ></button>
         <a routerLink="/cv" routerLinkActive="active" class="navbar-brand">Presentation</a>
     </div>
+    <div id="4" class="navbar-header" (click)="onclick('4')">
+        <button type="button" class="navbar-toggle collapsed" ></button>
+        <a routerLink="/about" routerLinkActive="active" class="navbar-brand">Presentation</a>
+    </div>
+</nav>  -->
+ 
+<nav class="col-sm-offset-4 navbar">
+    <div id="1" class="navbar-header" (click)="onclick(i)" *ngFor="let nav of navInfo; let i=index">
+        <button type="button" class="navbar-toggle collapsed"></button>
+        <a routerLink="/{{nav.path}}" routerLinkActive="active" class="navbar-brand">{{nav.name}}</a>
+    </div>
 </nav>
+
 <router-outlet></router-outlet>

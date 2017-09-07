@@ -1,14 +1,20 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { EdInputTextareaInformation } from './edInputTextareaInformation';
 
 @Component({
-    selector: 'app-table',
-    templateUrl: './table.component.html'
+    selector: 'app-edinput',
+    templateUrl: './edInput.component.html',
+    styleUrls: ['./edInput.component.css']
 })
 
 export class EdInputComponent {
-    constructor()
-    {
+    info: [ EdInput ]
+    edInput = EdInputTextareaInformation;
+}
 
-    }
-
+export class EdInput {
+    qualification: string;
+    placeOfStudy: string;
+    year: string;
  }

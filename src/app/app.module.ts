@@ -10,6 +10,10 @@ import { HomeModule } from './components/home/home.module';
 import { InfoModule } from './components/info/info.module';
 import { NavModule } from './components/nav/nav.module';
 import { CVModule } from './components/cv/cv.module';
+import { AboutModule } from './components/about/about.module';
+import { FooterModule } from './components/footer/footer.module';
+
+import { ScreenHeightService } from './app-screen-height.service';
 
 @NgModule({
   declarations: [
@@ -24,9 +28,11 @@ import { CVModule } from './components/cv/cv.module';
     InfoModule,
     NavModule,
     CVModule,
+    AboutModule,
+    FooterModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ScreenHeightService],
   bootstrap: [AppComponent]
 })
 

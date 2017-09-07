@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 import { NavBar } from './nav';
 import { NAVBAR } from './nav-info';
@@ -9,6 +9,11 @@ import { NAVBAR } from './nav-info';
     styleUrls: ['nav.component.css']
 })
 
-export class NavBarComponent {
+export class NavBarComponent{
     navInfo: NavBar [] = NAVBAR;
+    @Output() idNumber = new EventEmitter();
+
+    onclick(id){
+        this.idNumber.emit(id);
+    }
  }

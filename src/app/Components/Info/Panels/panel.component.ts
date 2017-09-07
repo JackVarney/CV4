@@ -1,10 +1,8 @@
-import { Component, OnInit, OnChanges, trigger, state, transition, style, animate } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Panel } from './panel';
 import { PanelService } from './panel.service';
 import { easeInOut } from 'app/animations/easeInOut-animation';
-
-
 
 @Component({
     selector: 'app-panels',
