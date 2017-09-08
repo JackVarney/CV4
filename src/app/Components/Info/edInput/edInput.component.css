@@ -1,3 +1,8 @@
 p{
     font-size: 12px;
 }
+
+#edItems{
+    border: 1px solid black;
+    text-align: left;
+}

@@ -1,3 +1,3 @@
 export const EdInputTextareaInformation = [
-    'Qualifications', 'Place Of Study', 'Year'
+    'Qualification', 'Place Of Study', 'Year'
 ]

@@ -11,6 +11,13 @@ import { ScreenHeightService } from './app-screen-height.service';
 export class AppComponent {
   index: number;
   id = 1;
+  headerName = [
+    {name: 'Home'},
+    {name: 'Info'},
+    {name: 'sometihn'},
+    {name: 'someyhing else'}
+  ]
+
   constructor ( private _screenHeightService: ScreenHeightService ) { }
 
   getID(event) {

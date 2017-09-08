@@ -1,0 +1,11 @@
+#div{
+    background-color: white;
+    min-height: 5%;
+}
+
+#div2{
+    color: #06292b;
+    background-color: #06292b;
+    height: 4%;
+    max-height: 5%;
+}

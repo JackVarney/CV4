@@ -1,7 +1,17 @@
 <p>Education</p>
-<div>
-    <md-input-container id="inputContainer" style="width: 32%; padding-left: 3%;" *ngFor="let input of edInput; let i=index">
-        <textarea id="text" mdInput placeholder="{{input}}" type="text" class="form-control" rows="1"></textarea>
+<div class="row" style="padding-left: 10px">
+    <md-input-container id="inputContainer" style="width: 31%; padding-right: 2%" *ngFor="let input of edInput; let i=index">
+        <textarea id="text{{i}}" mdInput placeholder="{{input}}" type="text" class="form-control" rows="1"></textarea>
     </md-input-container>
-    
+    <button (click)="getInfo()">Add</button>
 </div>
+
+<!--  make this into a table would be much better than this weird div table  -->
+
+<ul *ngIf="info">
+    <div id="edItems" class="caption col-sm-4" *ngFor="let item of info">
+        {{item}}
+    </div>
+</ul>
+
+<app-edtable (userOutput)="getUserInfo($event)" ></app-edtable>

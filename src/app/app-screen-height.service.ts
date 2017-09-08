@@ -9,17 +9,16 @@ export class ScreenHeightService {
     }
 
     getScreenHeight(id) {
-        console.log('id is: ' + id);
         let a = id + 1;
         let b;
 
         switch (a) {
             case 1:
-                b = 1000;
+                b = 950;
                 break;
 
             case 2:
-                b = 1140;
+                b = 1360;
                 break;
 
             case 3:
@@ -30,6 +29,9 @@ export class ScreenHeightService {
                 b = 1000;
                 break;
         }
+
+        let c = $('#middle').height();
+        console.log(c);
 
         return b;
     }

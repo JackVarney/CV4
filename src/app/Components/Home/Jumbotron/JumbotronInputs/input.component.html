@@ -1,0 +1,5 @@
+<div>
+    <md-input-container *ngFor="let input of inputs">
+        <textarea id="textArea" mdInput placeholder="{{input.name}}" type="text" class="form-control" rows="1" [(ngModel)]="input.input"></textarea>
+    </md-input-container>
+</div>
