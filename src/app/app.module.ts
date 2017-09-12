@@ -13,7 +13,7 @@ import { CVModule } from './components/cv/cv.module';
 import { AboutModule } from './components/about/about.module';
 import { FooterModule } from './components/footer/footer.module';
 
-import { ScreenHeightService } from './app-screen-height.service';
+import { GetHeightService } from './service/get-height.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,9 @@ import { ScreenHeightService } from './app-screen-height.service';
     FooterModule,
     AppRoutingModule
   ],
-  providers: [ScreenHeightService],
+  providers: [
+    GetHeightService
+  ],
   bootstrap: [AppComponent]
 })
 

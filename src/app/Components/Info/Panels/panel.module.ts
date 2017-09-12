@@ -7,10 +7,7 @@ import { Autosize } from 'angular2-autosize/src/autosize.directive';
 
 import { PanelComponent } from './panel.component';
 import { PanelService } from './panel.service';
-
-import { PanelWellModule } from '../Panel-Wells/panel-well.module';
-import { ProgressBarModule } from '../Progress-Bars/progress-bar.module';
-import { EdInputModule } from '../edinput/edinput.module';
+import { EdInputModule } from './edinput/edinput.module';
 
 @NgModule({
   declarations:

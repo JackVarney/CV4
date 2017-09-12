@@ -9,3 +9,7 @@
     height: 4%;
     max-height: 5%;
 }
+
+#router{
+    min-height: 650px;
+}

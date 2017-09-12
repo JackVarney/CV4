@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Panel } from '../Panels/panel';
+import { Panel } from '../panel';
 
 @Component({
     selector: 'app-progress-bar',
